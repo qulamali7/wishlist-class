@@ -1,0 +1,105 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  background: #1d2b64;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8cdda, #1d2b64);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8cdda, #1d2b64);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title {
+  text-align: center;
+  padding: 30px 0px;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 5px;
+  transition: 0.5s all ease;
+  font-weight: 500;
+  &:hover {
+    cursor: pointer;
+    background-color: #1d2b64;
+    color: #f8cdda;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .card {
+    width: 23%;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s all ease;
+    text-align: center;
+    .card-img {
+      position: relative;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+      }
+      .icon {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        color: orange;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
+
+.product-cards {
+  width: 80%;
+  margin: auto;
+
+  .product-card {
+    background-color: #557c55;
+  }
+}
+
+.basket-cards {
+  min-height: 30vh;
+
+  .basket-card {
+    background-color: #d3d04f;
+  }
+}
